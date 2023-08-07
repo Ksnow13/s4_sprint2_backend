@@ -13,6 +13,6 @@ public interface VehicleRestRepository extends JpaRepository<Vehicle, Long> {
     public List<Vehicle> findByBrand(@Param("brand")String brand);
     public List<Vehicle> findByModel(@Param("model")String model);
     public List<Vehicle> findByVin(@Param("vin")String vin);
-
+    public List<Vehicle> findByColour(@Param("colour")String colour);
 
 }
