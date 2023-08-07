@@ -10,12 +10,9 @@ import java.util.List;
 @RepositoryRestResource(collectionResourceRel = "vehicle", path = "vehicle")
 public interface VehicleRestRepository extends JpaRepository<Vehicle, Long> {
 
-    public List<Vehicle> findByBrand(@Param("brand")String airLine);
+    public List<Vehicle> findByBrand(@Param("brand")String brand);
 
-    //public List<Aircraft> findByType(@Param("type")String type);
+    public List<Vehicle> findByModel(@Param("model")String model);
 
-    // this gets a list of aircraft's that can land/take off from an airport.
-
-    //public List<Aircraft> findByAirports_name(@Param("airports_name")String airportName);
 
 }
