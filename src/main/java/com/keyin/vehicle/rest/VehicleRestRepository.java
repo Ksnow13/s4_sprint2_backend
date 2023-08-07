@@ -15,5 +15,6 @@ public interface VehicleRestRepository extends JpaRepository<Vehicle, Long> {
     public List<Vehicle> findByVin(@Param("vin")String vin);
     public List<Vehicle> findByYear(@Param("year")String year);
     public List<Vehicle> findByColour(@Param("colour")String colour);
+    public List<Vehicle> findByCost(@Param("cost")String cost);
 
 }
