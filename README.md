@@ -7,7 +7,7 @@ How To Work the Program:
 - Frist Have MySQL Workbench running a local instance and create a database called search_engine_db OR name it anything you want as long as your change the name in the application.properties and docker-compose.yml files.
 - Once your created your database, run the file called RestServiceApplication.
 - When you run the program all the tables and relationship will be created in your MySQL database automatically.
-  * IMPORTANT * This program is set up with basic authentication.
+  * IMPORTANT - This program is set up with basic authentication.
   * Username: admin
   * Password: admin
 - Next lunch Postman and do a GET on http://localhost:8080/ to see the links, make shure to click on Authorization and have basic auth select, then enter the username and password.
