@@ -7,7 +7,10 @@ How To Work the Program:
 - Frist Have MySQL Workbench running a local instance and create a database called search_engine_db OR name it anything you want as long as your change the name in the application.properties and docker-compose.yml files.
 - Once your created your database, run the file called RestServiceApplication.
 - When you run the program all the tables and relationship will be created in your MySQL database automatically.
-- Next lunch Postman and do a GET on http://localhost:8080/ to see the links.
+  * IMPORTANT * This program is set up with basic authentication.
+  * Username: admin
+  * Password: admin
+- Next lunch Postman and do a GET on http://localhost:8080/ to see the links, make shure to click on Authorization and have basic auth select, then enter the username and password.
 - Once your Local host instance is working with the database you can start adding data.
 - You can add data manually in postman or mySQL workbench one at a time, or use one of the two files in database/queryStatments to insert 1000 pieces of mock data into the database.
 - In mySQL copy and paste all the insert statments to add data, or in postman copy and paste and the json data with the link  http://localhost:8080/vehicle with a post header.
