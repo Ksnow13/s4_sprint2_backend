@@ -13,11 +13,13 @@ import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.security.provisioning.JdbcUserDetailsManager;
 import org.springframework.security.web.SecurityFilterChain;
+import org.springframework.web.bind.annotation.CrossOrigin;
 
 import javax.sql.DataSource;
 
 @Configuration
 @EnableWebSecurity
+@CrossOrigin
 public class SecurityConfig {
     @Autowired
     private DataSource dataSource;
